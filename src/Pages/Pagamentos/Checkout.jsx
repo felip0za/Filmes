@@ -27,12 +27,18 @@ export default function Checkout({ filme }) {
     setSucesso(false);
 
     try {
-      await axios.post(`${import.meta.env.VITE_API_URL || 'http://localhost:3000'}/pagamentos`, {
+     await axios.post('http://localhost:8080/pagamentos', {
         id: filme.id,
-        valor: filme.preco,
+        valor: Math.round(filme.preco * 100), // <--- Aqui converte para centavos corretamente
         metodo,
         datapagamento: new Date().toISOString(),
-      });
+        nome: campos.nome,
+        numero: campos.numero,
+        validade: campos.validade,
+        cvv: campos.cvv,
+        cpf: campos.cpf,
+        email: campos.email,
+        });
       setSucesso(true);
     } catch (err) {
       setErro(err.response?.data?.message || 'Erro ao processar o pagamento.');
@@ -80,7 +86,7 @@ export default function Checkout({ filme }) {
           </>
         )}
 
-        <button type="submit" disabled={carregando || !camposValidos()}>
+        <button type="submit" className="botão" disabled={carregando || !camposValidos()}>
           {carregando ? 'Processando...' : 'Confirmar Pagamento'}
         </button>
 

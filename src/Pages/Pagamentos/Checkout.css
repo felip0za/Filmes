@@ -74,7 +74,7 @@
   font-weight: bold;
 }
 
-button {
+.botão {
     display: block; /* garante que o margin auto funcione corretamente */
   width: 50%;
     margin: 10px auto 15px auto; /* centraliza horizontalmente */
@@ -88,12 +88,12 @@ button {
   transition: background 0.3s, box-shadow 0.3s;
 }
 
-button:disabled {
+.botão:disabled {
   background: #a0c4ff;
   cursor: not-allowed;
 }
 
-button:hover:not(:disabled) {
+.botão:hover:not(:disabled) {
   background: #0056b3;
   box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
 }

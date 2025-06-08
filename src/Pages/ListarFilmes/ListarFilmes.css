@@ -103,3 +103,49 @@
   margin-top: 12px;
 }
 
+.header-top {
+  display: flex;
+  justify-content: center; /* centraliza o título */
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.header-top h1 {
+  margin: 0 auto;
+  color: #222;
+}
+
+.payments-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payments-button:hover {
+  background-color: #1e40af;
+}
+
+.alugar-button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.alugar-button:hover {
+  background-color: #0056b3;
+}
