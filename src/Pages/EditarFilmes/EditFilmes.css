@@ -1,0 +1,92 @@
+.editar-filme-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  font-family: Arial, sans-serif;
+}
+
+.editar-filme-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.editar-filme-form label {
+  margin-top: 12px;
+}
+
+.editar-filme-form input,
+.editar-filme-form textarea {
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+.editar-filme-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.editar-filme-form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #33ff00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.editar-filme-form button:hover {
+  background-color: #17c900ec;
+}
+
+.preview-image {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* Agrupamento dos botões */
+.button-group, .form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+/* Botão de salvar */
+.save-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+/* Botão de deletar */
+.delete-button {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #a80000;
+}

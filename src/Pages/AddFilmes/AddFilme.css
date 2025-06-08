@@ -1,0 +1,49 @@
+.add-filme-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  font-family: Arial, sans-serif;
+}
+
+.add-filme-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-filme-form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.add-filme-form input,
+.add-filme-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.preview-img {
+  max-width: 100%;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #666;
+}
