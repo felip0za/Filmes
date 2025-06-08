@@ -16,20 +16,6 @@ function MainRoutes() {
       <Route path='/editfilme/:id' element={<EditFilmes />} />
       <Route path="/pagamentos/consultar" element={<ListarPagamentos />} />
       <Route path="/pagamentos/:id" element={<DetalhesPagamento />} />
-
-      {/* Rota de teste para a tela de checkout */}
-      <Route
-        path='/checkout'
-        element={
-          <Checkout
-            filme={{
-              id: 1,
-              titulo: 'Star Wars',
-              preco: 20.00
-            }}
-          />
-        }
-      />
     </Routes>
   );
 }
