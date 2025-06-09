@@ -10,7 +10,7 @@ export default function DetalhesPagamento() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`${import.meta.env.VITE_API_URL || "http://localhost:8080"}/pagamentos/${id}`)
+    axios.get(`${import.meta.env.VITE_API_URL || "https://servicedepagamento.onrender.com"}/pagamentos/${id}`)
       .then((res) => setPagamento(res.data))
       .catch((err) => setErro("Erro ao carregar detalhes do pagamento."));
   }, [id]);

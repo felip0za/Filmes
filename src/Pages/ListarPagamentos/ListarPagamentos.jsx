@@ -12,7 +12,7 @@ export default function ListarPagamentos() {
     setErro(null);
     setPagamentos([]);
     try {
-      const res = await axios.get('http://localhost:8080/pagamentos/listar');
+      const res = await axios.get('https://servicedepagamento.onrender.com/pagamentos/listar');
       setPagamentos(res.data);
     } catch (err) {
       setErro('Erro ao listar os pagamentos.');

@@ -27,7 +27,7 @@ export default function Checkout({ filme }) {
     setSucesso(false);
 
     try {
-     await axios.post('http://localhost:8080/pagamentos', {
+     await axios.post('https://servicedepagamento.onrender.com/pagamentos', {
         id: filme.id,
         valor: Math.round(filme.preco * 100), // <--- Aqui converte para centavos corretamente
         metodo,
